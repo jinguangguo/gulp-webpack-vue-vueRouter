@@ -4,20 +4,34 @@
  * @date 2016/3/15
  */
 
-require('./style.scss');
+import './style.scss';
 
-let Vue = require('vue');
-let tpl = require('./tpl.tpl');
+import Vue from 'vue';
+import tpl from './tpl.tpl';
 
-console.log(tpl);
+import first from '../component/First/main';
 
-module.exports = Vue.extend({
+export default Vue.extend({
 
     template: tpl,
 
+    components: {
+        'my-first-component': first
+    },
+
     data() {
         return {
-            name: 'king'
+            name: 'king',
+            isShow: true
+        }
+    },
+
+    /**
+     * 可以充当对某个数据的格式化处理之后的内容
+     */
+    computed: {
+        nameUpper() {
+            return this.name.toUpperCase();
         }
     },
 

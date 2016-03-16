@@ -62,7 +62,9 @@ gulp.task('server:start',  function() {
                 case 'js':
 
                     let newOption = Object.assign(webpackDevConfig, {
-                        entry: fileInfo.filePath
+                        entry: {
+                            [fileInfo.fileName]: fileInfo.filePath
+                        }
                     });
 
                     //console.log('newOption.devtool: ' + newOption.devtool);
