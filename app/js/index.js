@@ -4,8 +4,11 @@
  * @date 2016/3/15
  */
 
+import '../scss/index.scss';
+
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+
 import Test from '../widget/Test/main';
 import Second from '../widget/component/Second.vue';
 
