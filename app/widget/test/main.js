@@ -7,7 +7,7 @@
 import './style.scss';
 
 import Vue from 'vue';
-import tpl from './tpl.tpl';
+import tpl from './tpl.html';
 
 import first from '../component/First/main';
 

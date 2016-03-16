@@ -14,7 +14,7 @@ export default {
 
         loaders: [
             {
-                test: /\.tpl$/,
+                test: /\.(tpl|html)$/,
                 loader: 'html'
             },
             {

@@ -5,7 +5,24 @@
  */
 
 import Vue from 'vue';
+import tpl from './tpl.html';
 
 export default Vue.extend({
-    template: '<div>A custom component!</div>'
+
+    template: tpl,
+
+    data() {
+        return {
+
+        };
+    },
+
+    methods: {
+
+        toClick() {
+            console.log('clicked ...');
+        }
+
+    }
+
 });
